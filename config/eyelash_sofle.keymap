@@ -101,11 +101,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans           &trans          &trans  &trans      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &rgb_ug RGB_BRI  &trans          &trans  &trans      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans           &trans          &trans  &trans      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans           &kp C_BRI_UP    &trans  &kp C_PREV  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans           &trans          &trans  &trans      &trans  &trans  &trans  &trans
+&kp TILDE  &trans  &trans  &trans  &trans           &trans          &trans  &trans      &trans  &trans  &trans  &kp UNDERSCORE  &kp PLUS
+&trans     &trans  &trans  &trans  &rgb_ug RGB_BRI  &trans          &trans  &trans      &trans  &trans  &trans  &trans          &kp RIGHT_BRACE
+&trans     &trans  &trans  &trans  &trans           &trans          &trans  &trans      &trans  &trans  &trans  &trans          &kp PIPE
+&trans     &trans  &trans  &trans  &trans           &kp C_BRI_UP    &trans  &kp C_PREV  &trans  &trans  &trans  &trans          &trans
+&trans     &trans  &trans  &trans  &trans           &trans          &trans  &trans      &trans  &trans  &trans  &trans
             >;
 
             display-name = "layer3";
