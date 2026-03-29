@@ -38,29 +38,7 @@
     behaviors {
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        softoff {
-            bindings = <&soft_off>;
-            key-positions = <14 28 40>;
-        };
-
-        rgbBrightnessInc {
-            bindings = <&rgb_ug RGB_BRI>;
-            key-positions = <17 39 57>;
-        };
-
-        screenBrightnessInc {
-            bindings = <&kp C_BRIGHTNESS_INC>;
-            key-positions = <44 57 39>;
-        };
-
-        prevTrack {
-            bindings = <&kp C_PREVIOUS>;
-            key-positions = <39 57 46>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         SHIFT_MCLK: SHIFT_MCLK {
@@ -100,7 +78,7 @@
 &kp GRAVE   &trans      &trans     &trans      &trans           &trans                  &mmv MOVE_UP     &mkp LCLK       &mkp RCLK       &mkp MCLK          &kp MINUS        &kp EQUAL         &kp BACKSLASH
 &trans      &trans      &trans     &trans      &rgb_ug RGB_BRD  &rgb_ug RGB_TOG         &mmv MOVE_DOWN   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP       &mmv MOVE_RIGHT  &kp C_PLAY_PAUSE  &kp RIGHT_BRACKET
 &trans      &trans      &trans     &trans      &trans           &trans                  &mmv MOVE_LEFT   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW       &kp RIGHT        &trans            &trans
-&trans      &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE      &kp C_BRIGHTNESS_DEC    &mmv MOVE_RIGHT  &kp C_NEXT      &kp K_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans            &trans
+&mo 3       &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE      &kp C_BRIGHTNESS_DEC    &mmv MOVE_RIGHT  &kp C_NEXT      &kp K_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans            &trans
 &kp C_MUTE  &trans      &trans     &trans      &trans           &trans                  &mkp LCLK        &trans          &trans          &trans             &trans           &trans
             >;
 
@@ -123,11 +101,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans           &trans          &trans  &trans      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &rgb_ug RGB_BRI  &trans          &trans  &trans      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans           &trans          &trans  &trans      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans           &kp C_BRI_UP    &trans  &kp C_PREV  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans           &trans          &trans  &trans      &trans  &trans  &trans  &trans
             >;
 
             display-name = "layer3";
